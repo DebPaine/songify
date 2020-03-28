@@ -9,8 +9,8 @@ connectDB();
 
 app.use(express.json({ extended: false }));
 
-// app.use('/artists', artists);
-// app.use('/songs', songs);
+app.use('/artists', artists);
+app.use('/songs', songs);
 
 const PORT = process.env.PORT || 3001;
 
