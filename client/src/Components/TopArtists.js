@@ -17,21 +17,6 @@ const TopArtists = () => {
 				<tbody>
 					<tr>
 						<td>Avicii</td>
-						<td>New song</td>
-						<td>New song</td>
-						<td>New song</td>
-					</tr>
-					<tr>
-						<td>Avicii</td>
-						<td>New song</td>
-						<td>New song</td>
-						<td>New song</td>
-					</tr>
-					<tr>
-						<td>Avicii</td>
-						<td>New song</td>
-						<td>New song</td>
-						<td>New song</td>
 					</tr>
 				</tbody>
 			</table>

@@ -33,39 +33,6 @@ const Landing = () => {
 								/>
 							</figure>
 						</td>
-						<td>New song</td>
-						<td>New song</td>
-						<td>New song</td>
-					</tr>
-					<tr>
-						<td>
-							<figure class='image is-2by1'>
-								<img alt='' src='https://bulma.io/images/placeholders/256x256.png' />
-							</figure>
-						</td>
-						<td>New song</td>
-						<td>New song</td>
-						<td>New song</td>
-					</tr>
-					<tr>
-						<td>
-							<figure class='image is-2by1'>
-								<img alt='' src='https://bulma.io/images/placeholders/256x256.png' />
-							</figure>
-						</td>
-						<td>New song</td>
-						<td>New song</td>
-						<td>New song</td>
-					</tr>
-					<tr>
-						<td>
-							<figure class='image is-2by1'>
-								<img alt='' src='https://bulma.io/images/placeholders/256x256.png' />
-							</figure>
-						</td>
-						<td>New song</td>
-						<td>New song</td>
-						<td>New song</td>
 					</tr>
 				</tbody>
 			</table>
