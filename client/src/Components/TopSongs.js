@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Landing = () => {
+	let songs;
+
 	return (
 		<div className='container'>
 			<br />
@@ -20,20 +22,27 @@ const Landing = () => {
 						<th>Artwork</th>
 						<th>Song</th>
 						<th>Artists</th>
-						<th>Rating</th>
+						<th>Average Rating</th>
+						<th>Rate song</th>
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<td>
-							<figure class='image is-4by3'>
-								<img
-									alt=''
-									src='https://upload.wikimedia.org/wikipedia/en/7/7a/Minutes_to_Midnight_cover.jpg'
-								/>
-							</figure>
-						</td>
-					</tr>
+					{songs &&
+						songs.map((song) => (
+							<tr key={song._id}>
+								<td>
+									<figure class='image is-4by3'>
+										<img alt='' src={song.coverart} />
+									</figure>
+								</td>
+								<td>{song.name}</td>
+								<td>{song.artists}</td>
+								<td>{song.avgrating}</td>
+								<td>
+									<input type='number' name='rating' />
+								</td>
+							</tr>
+						))}
 				</tbody>
 			</table>
 		</div>

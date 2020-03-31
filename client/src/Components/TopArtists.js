@@ -1,6 +1,8 @@
 import React from 'react';
 
 const TopArtists = () => {
+	let artists;
+
 	return (
 		<div className='container'>
 			<br />
@@ -15,9 +17,15 @@ const TopArtists = () => {
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<td>Avicii</td>
-					</tr>
+					{artists &&
+						artists.map((artist) => (
+							<tr key={artist._id}>
+								<td>{artist.name}</td>
+								<td>{artist.dob}</td>
+								<td>{artist.songs}</td>
+								<td>{artist.avgrating}</td>
+							</tr>
+						))}
 				</tbody>
 			</table>
 		</div>
